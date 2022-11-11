@@ -1,0 +1,24 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dheerajarora1997/jobs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dheerajarora1997/jobs/issues"
+  },
+  "homepage": "https://github.com/dheerajarora1997/jobs#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-scss": "^5.2.2",
+    "sass": "^1.56.1"
+  }
+}
