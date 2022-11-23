@@ -1,0 +1,7 @@
+@import './base/typography', './abstracts/mixin', './abstracts/helper', './components/scrollbar';
+
+// Bootstrap basic style 
+@import './getBootstrap';
+
+// website basic components and layouts
+ @import './layouts/header','./layouts/footer','./layouts/topbar','./layouts/sidebar';
