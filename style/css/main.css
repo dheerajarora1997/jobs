@@ -6,6 +6,17 @@
   justify-content: center;
   align-items: center; }
 
+::-webkit-scrollbar {
+  width: 5px; }
+  ::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.45); }
+  ::-webkit-scrollbar-thumb {
+    background: #7b61ff; }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7b61ff; }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

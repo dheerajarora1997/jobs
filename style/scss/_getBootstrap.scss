@@ -2,17 +2,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$primary : #7b61ff;
-$secondary : #C70A80;
-$info: #26a4ff;
-$danger: #f6374e;
-$warning : #FFE15D;
-
+@import './abstracts/variable';
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../../node_modules/bootstrap/scss/variables";
 
 // 4. Include any default map overrides here
+
 
 // 5. Include remainder of required parts
 @import "../../node_modules/bootstrap/scss/maps";
