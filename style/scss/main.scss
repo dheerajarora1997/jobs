@@ -1,7 +1,18 @@
 @import './base/typography', './abstracts/mixin', './abstracts/helper', './components/scrollbar';
 
 // Bootstrap basic style 
-@import './getBootstrap';
+@import './getBootstrap', './get-bootstrap-component';
 
 // website basic components and layouts
- @import './layouts/header','./layouts/footer','./layouts/topbar','./layouts/sidebar';
+@import './layouts/header', './layouts/footer', './layouts/topbar', './layouts/sidebar';
+
+
+
+.hover-up {
+ transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+ &:hover {
+  transform: translateY(-3px);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+ }
+}

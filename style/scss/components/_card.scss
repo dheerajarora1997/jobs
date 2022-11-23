@@ -1,0 +1,198 @@
+.card-grid {
+ position: relative;
+ border-radius: 10px;
+ border: 0.88px solid rgba($primary, .12);
+ overflow: hidden;
+ margin-bottom: 30px;
+ position: relative;
+ background: $light;
+ text-align: center;
+
+ &:hover {
+  background: rgba($primary, .12);
+ }
+}
+
+.card-image-top {
+ border: 1px solid $primary;
+ padding: 12px 12px 20px 12px;
+ border-radius: 16px;
+ margin-bottom: 24px;
+
+ .image {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+  height: 261px;
+  width: 100%;
+  border-radius: 10px;
+  // background-color: $color-border-1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+
+  .lbl-hot {
+   position: absolute;
+   top: 20px;
+   left: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 0px 10px;
+   height: 24px;
+   background: $primary;
+   border-radius: 5px;
+   // color: $color-brand-2;
+   min-width: 42px;
+  }
+
+  img {
+   border-radius: 0px;
+   width: 100%;
+  }
+ }
+
+ .informations {
+  position: relative;
+  padding: 0 5px;
+
+  h5 {
+   margin-bottom: 5px;
+  }
+ }
+
+ &:hover {
+  // box-shadow: $box-shadow-2;
+ }
+}
+
+.card-grid-border {
+ border: 1px solid $primary;
+ padding: 30px;
+ border-radius: 8px;
+ margin-bottom: 30px;
+
+ &:hover {
+  // box-shadow: $box-shadow-2;
+ }
+
+ .link-arrow {
+  display: inline-block;
+  padding: 0px 35px 0px 0px;
+  // background: url(../imgs/template/icons/arrow-right.svg) no-repeat right top 2px;
+  // color: $color-brand-2;
+  // font-size: $font-sm;
+  line-height: 22px;
+ }
+}
+
+.card-list-4 {
+ position: relative;
+ display: flex;
+ width: 100%;
+ padding: 0px 0px 15px 0px;
+ margin-bottom: 0px;
+ border-bottom: 1px solid $primary;
+
+ .image {
+  min-width: 60px;
+  padding-right: 10px;
+ }
+
+ .info-text {
+  width: 100%;
+  margin-top: -4px;
+ }
+
+ .card-price {
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 0px;
+  display: inline-block;
+  // color: $color-brand-2;
+
+  span {
+   font-size: 12px;
+   line-height: 12px;
+   // color: $color-text-paragraph;
+   font-weight: 500;
+  }
+ }
+}
+
+ul {
+ li {
+  &:last-child {
+   padding-bottom: 0px !important;
+
+   .card-list-4 {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+   }
+  }
+ }
+}
+
+.box-radius-8 {
+ border-radius: 8px;
+ // background-color: $background-urgent;
+ padding: 30px;
+ display: flex;
+ // box-shadow: $box-shadow-2;
+ border: 1px solid $primary;
+
+ .image {
+  display: inline-block;
+  min-width: 176px;
+  padding-right: 25px;
+ }
+
+ .text-info {
+  display: inline-block;
+  width: 100%;
+ }
+}
+
+.card-category {
+ height: 255px;
+
+ .box-cover-img {
+  top: 0px;
+ }
+}
+
+.card-review-1 {
+ border: 1px solid $primary;
+ border-radius: 10px;
+ padding: 0px 25px 25px 25px;
+ position: relative;
+ margin: 45px 0px 0px 0px;
+
+ .image-review {
+  text-align: center;
+
+  img {
+   margin: -44px 0px 0px 0px;
+   width: 88px;
+   height: 88px;
+   border-radius: 50%;
+  }
+ }
+
+ .review-name {
+  text-align: center;
+  border-bottom: 1px solid $primary;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+ }
+
+ .review-rating {
+  margin-bottom: 10px;
+
+  img {
+   margin-right: 5px;
+  }
+ }
+}
