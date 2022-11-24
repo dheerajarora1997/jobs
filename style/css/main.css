@@ -9,6 +9,10 @@
 .list-style-none {
   list-style-type: none; }
 
+::selection {
+  background: #05264E;
+  color: #fff; }
+
 ::-webkit-scrollbar {
   width: 5px; }
   ::-webkit-scrollbar-track {
