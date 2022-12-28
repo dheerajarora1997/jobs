@@ -8,3 +8,8 @@
 @import "../../vendor/bootstrap/scss/variables";
 
 // 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../../vendor/bootstrap/scss/maps";
+@import "../../vendor/bootstrap/scss/mixins";
+@import "../../vendor/bootstrap/scss/root";
