@@ -1,0 +1,16 @@
+@import '../getBootstrap';
+
+.sidebar {
+  @media only screen and (max-width: 767px) {
+   width: calc(100vw - 30px);
+   position: fixed;
+   bottom: -44%;
+   padding: 10px;
+   border-radius: 10px 10px 0 0;
+   max-height: 600px;
+   overflow: auto;
+   &.opened{
+    bottom: 0;
+   }
+  }
+ }
