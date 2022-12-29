@@ -179,11 +179,11 @@
                   About
                   <button onclick="editAbout(this)" class="child-element p-1  border-0 bg-transparent edit-btn"
                     data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Edit Profile">
-                    <span class="material-icons-outlined fs-6"> edit </span>
+                    <span class="material-icons-outlined fs-6 text-danger"> edit </span>
                   </button>
                   <button onclick="saveAbout(this)" class="d-none p-1 border-0 bg-transparent save-btn"
                     data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Save Profile">
-                    <span class="material-icons-outlined fs-6"> done </span>
+                    <span class="material-icons-outlined fs-6 text-danger"> done </span>
                   </button>
                   <div class="float-end">
                     <span class="text-muted fw-light fs-6 child-element">Updated: 2 Days</span>
@@ -205,26 +205,39 @@
                 <h3 class="text-dark text-opacity-75 h5 mb-3">Skills</h3>
                 <div class="d-inline-block w-100">
                   <div class="btn-group">
-                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">HTML
-                    </div>
-                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">CSS
-                    </div>
-                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">Less /
-                      Scss</div>
-                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">jQuery
+                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">
+                      HTML
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
                     </div>
                     <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">
-                      Javascript</div>
+                      CSS
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
+                    </div>
+                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">
+                      Less / Scss
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
+                    </div>
+                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">jQuery
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
+                    </div>
+                    <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">
+                      Javascript
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
+                    </div>
                     <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">React
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
                     </div>
                     <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">Node.js
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
                     </div>
                     <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">mySql
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
                     </div>
                     <div class="btn btn-link bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2">
-                      WordPress</div>
-                    <button onclick="addSkillButton('Add Skills')"
-                      class="py-1 px-2 text-primary bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2 dashed-border">
+                      WordPress
+                      <span class="material-icons-outlined fs-6 text-danger"> clear </span>
+                    </div>
+                    <button onclick="addSkillButton('Add Skills')" class="py-1 px-3 text-primary bg-primary bg-opacity-10 rounded-5 text-decoration-none mb-2 me-2 dashed-border">
                       + Add New
                       Skill</button>
                   </div>
