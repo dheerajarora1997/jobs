@@ -315,14 +315,19 @@ ul li:last-child {
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .sidebar {
+    bottom: -44%;
     width: calc(100vw - 30px);
     position: fixed;
-    bottom: -44%;
     padding: 10px;
-    border-radius: 10px 10px 0 0;
     max-height: 600px;
-    overflow: auto; }
+    overflow: auto;
+    transition: all ease-in-out .5s; } }
+  @media only screen and (max-width: 991px) and (max-width: 991px) {
+    .sidebar {
+      bottom: -38%; } }
+
+@media only screen and (max-width: 991px) {
     .sidebar.opened {
       bottom: 0; } }
