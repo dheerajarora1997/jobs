@@ -1,7 +1,29 @@
+@import '../getBootstrap';
+
 .flex-center {
  @extend %flex-center;
 }
 
 .list-style-none {
  list-style-type: none;
+}
+
+.dashed-border {
+ border: 1px dashed $primary;
+}
+
+.parent-element {
+ @media only screen and (min-width :991px) {
+  .child-element {
+   visibility: hidden;
+  }
+
+  &:hover {
+   .child-element {
+    visibility: visible;
+   }
+
+  }
+ }
+
 }

@@ -1,17 +1,18 @@
-let filter_block = document.getElementsByClassName('filter-block');
+let editProfile = (ele) => {
+ ele.classList.add('d-none')
+ ele.closest('.parent-element').getElementsByClassName('save-btn')[0].classList.remove('d-none')
+ ele.closest('.parent-element').getElementsByClassName('editable')[0].classList.add('d-none')
+ ele.closest('.parent-element').getElementsByClassName('editable-element')[0].classList.remove('d-none')
+}
 
-let openAdvanceFilter = (e) => {
- if (window.innerWidth < 991) {
-  if (e.target.closest('.sidebar').classList.contains('opened')) {
-   e.target.closest('.sidebar').classList.remove('opened')
-  }
-  else {
-   e.target.closest('.sidebar').classList.add('opened')
-  }
- }
+let saveProfile = (ele) => {
+ ele.classList.add('d-none')
+ ele.closest('.parent-element').getElementsByClassName('edit-btn')[0].classList.remove('d-none')
+ ele.closest('.parent-element').getElementsByClassName('editable')[0].classList.remove('d-none')
+ ele.closest('.parent-element').getElementsByClassName('editable-element')[0].classList.add('d-none')
 }
 
 
-if (filter_block) {
- filter_block[0].addEventListener("click", openAdvanceFilter)
+let addSkillBUtton = (ele) => {
+ showUtilityOnePopup(ele);
 }
