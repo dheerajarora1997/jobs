@@ -31,7 +31,7 @@ let hideUtilityOnePopup = () => {
  utilityOnePopup.hide('hide');
 }
 
-// document scroll Common function 
+// document scroll Common function (pass id of element)
 let domScroll = (element) => {
  if (document.getElementById(element)) {
   window.scroll(0, document.getElementById(element).offsetTop - 55);

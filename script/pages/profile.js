@@ -32,3 +32,10 @@ let addReview = (ele, placement, size) => {
 let editProfile = (ele, placement, size) => {
  showUtilityOnePopup(ele, placement, size);
 }
+
+let tabTrigger = (el, ele, element) => {
+ activeLink = document.getElementsByClassName(ele)[0].querySelector('a.active');
+ activeLink.classList.remove('active')
+ el.classList.add('active')
+ domScroll(element);
+}
