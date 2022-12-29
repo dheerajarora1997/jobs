@@ -7,10 +7,24 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { keyboard: false });
 
 // show Utility One Popup
-let showUtilityOnePopup = (title) => {
+let showUtilityOnePopup = (title, size, placement) => {
+ 
  document.getElementById('utilityOneLabel').innerHTML = title;
  utilityOnePopup.show('show');
-} 
+
+ if (size) {
+  document.getElementById('utilityOnePopup').getElementsByClassName('modal-dialog')[0].classList.add(`modal-${size}`)
+  console.log(document.getElementById('utilityOnePopup').getElementsByClassName('modal-dialog')[0])
+ } else {
+  document.getElementById('utilityOnePopup').getElementsByClassName('modal-dialog')[0].classList.remove('modal-sm', 'modal-md', 'modal-lg', 'modal-llg', 'modal-xlg', 'modal-full')
+ }
+
+ if (placement) {
+  document.getElementById('utilityOnePopup').classList.add('offCanvasModal', placement)
+ } else {
+  document.getElementById('utilityOnePopup').classList.remove('offCanvasModal', 'right', 'left')
+ }
+}
 
 // Hide Utility One Popup
 let hideUtilityOnePopup = () => {
