@@ -115,18 +115,18 @@
             <div class="nav-tabs-wrapper">
               <ul class="nav nav-tabs d-inline-block w-100 mb-0">
                 <li class="nav-item d-inline-block">
-                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link show active">
+                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link show active" onclick="domScroll('profile-section')">
                     Profile
                   </a>
                 </li>
                 <li class="nav-item d-inline-block">
-                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link">
-                    Resume
+                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link" onclick="domScroll('review-section')">
+                    Review
                   </a>
                 </li>
                 <li class="nav-item d-inline-block">
-                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link">
-                    Review
+                  <a role="button" href="javascript:void(0);" class="d-inline-block nav-link" onclick="domScroll('resume-section')">
+                    Resume
                   </a>
                 </li>
               </ul>
@@ -174,7 +174,7 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
-              <div class="bg-white p-3 mb-3 parent-element">
+              <div class="bg-white p-3 mb-3 parent-element" id="profile-section">
                 <h3 class="text-dark text-opacity-75 h5 mb-3">
                   About
                   <button onclick="editAbout(this)" class="child-element p-1  border-0 bg-transparent edit-btn"
@@ -239,7 +239,7 @@
                     Add Language</button>
                 </div>
               </div>
-              <div class="bg-white p-3 mb-3">
+              <div class="bg-white p-3 mb-3" id="review-section">
                 <h3 class="text-dark text-opacity-75 h5 mb-3">
                   Review (22)
                   <div class="float-end">

@@ -8,7 +8,7 @@ let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { keyboard: false 
 
 // show Utility One Popup
 let showUtilityOnePopup = (title, size, placement) => {
- 
+
  document.getElementById('utilityOneLabel').innerHTML = title;
  utilityOnePopup.show('show');
 
@@ -29,4 +29,11 @@ let showUtilityOnePopup = (title, size, placement) => {
 // Hide Utility One Popup
 let hideUtilityOnePopup = () => {
  utilityOnePopup.hide('hide');
-} 
+}
+
+// document scroll Common function 
+let domScroll = (element) => {
+ if (document.getElementById(element)) {
+  window.scroll(0, document.getElementById(element).offsetTop - 55);
+ }
+}
