@@ -3,19 +3,16 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
  return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
+// Utility One Popup
+let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { keyboard: false });
+
 // show Utility One Popup
 let showUtilityOnePopup = (title) => {
- let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', {
-  keyboard: false
- });
  document.getElementById('utilityOneLabel').innerHTML = title;
- utilityOnePopup.show();
+ utilityOnePopup.show('show');
 } 
 
+// Hide Utility One Popup
 let hideUtilityOnePopup = () => {
- let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', {
-  keyboard: false
- });
- console.log(utilityOnePopup);
- utilityOnePopup.hide();
+ utilityOnePopup.hide('hide');
 } 
