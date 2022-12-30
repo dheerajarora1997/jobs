@@ -11,71 +11,61 @@
 </head>
 
 <body>
- <main>
+ <main class="wrapper active">
+  <div class="navigation bg-primary text-white d-none d-md-flex">
+   <ul class="nav nav-sidebar flex-nowrap flex-column w-100 ps-0">
+    <li class="text-center w-100 d-block mb-1">
+     <a href="javascript:void(0);" onclick="toggleMenu(this)" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2"> menu </i>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);"
+      class="active w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2">dashboard</i>
+      <span class="ms-1">Dashboard</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2" aria-hidden="true">work_outline</i>
+      <span class="ms-1">Jobs</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2" aria-hidden="true">article</i>
+      <span class="ms-1">Applications</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2"s">message</i>
+      <span class="ms-1">Messages</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2">contact_support</i>
+      <span class="ms-1">Queries</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2"Logs">format_list_bulleted</i>
+      <span class="ms-1">Activity Logs</span>
+     </a>
+    </li>
+    <li class="text-center w-100 d-block mt-auto">
+     <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
+      <i class="material-icons-outlined ms-1 me-2 p-2"Out" aria-hidden="true">logout</i>
+      <span class="ms-1">Sign Out</span>
+     </a>
+    </li>
+   </ul>
+  </div>
   <section>
-   <div class="container-fluid px-0">
-    <div class="wrapper active">
-     <div class="navigation bg-primary text-white d-none d-md-flex">
-      <ul class="nav nav-sidebar flex-nowrap flex-column w-100 ps-0">
-       <li class="text-center w-100 d-block mb-2">
-        <a href="javascript:void(0);" onclick="toggleMenu(this)" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2"> menu </i>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);"
-         class="active w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Dashboard">dashboard</i>
-         <span class="ml-3">Dashboard</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Jobs" aria-hidden="true">work_outline</i>
-         <span class="ml-3">Jobs</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Applications" aria-hidden="true">article</i>
-         <span class="ml-3">Applications</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="FAQ's">message</i>
-         <span class="ml-3">Messages</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Queries">contact_support</i>
-         <span class="ml-3">Queries</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center mb-1 text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Activity Logs">format_list_bulleted</i>
-         <span class="ml-3">Activity Logs</span>
-        </a>
-       </li>
-       <li class="text-center w-100 d-block mt-auto">
-        <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
-         <i class="material-icons-outlined ms-1 p-2" data-bs-toggle="tooltip" data-bs-placement="right"
-          data-bs-container="body" data-bs-title="Sign Out" aria-hidden="true">logout</i>
-         <span class="ml-3">Sign Out</span>
-        </a>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </div>
+   <div class="container">asdasdasd</div>
   </section>
  </main>
  <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

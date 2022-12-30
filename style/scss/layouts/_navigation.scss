@@ -69,10 +69,6 @@
    pointer-events: auto;
   }
 
-  a span {
-   font-size: 0;
-  }
-
   ol {
    display: none;
   }
@@ -118,6 +114,14 @@
  .navigation-bg {
   display: block;
  }
+}
+
+.wrapper.active .navigation:hover {
+ position: fixed;
+ min-width: $sidebar-width;
+ max-width: $sidebar-width;
+ overflow: hidden;
+ overflow-y: scroll;
 }
 
 .navigation-bg {

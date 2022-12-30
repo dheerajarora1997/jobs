@@ -5755,8 +5755,6 @@ textarea.form-control-lg {
       overflow-y: auto; } }
 
 .wrapper {
-  display: flex;
-  align-items: stretch;
   height: 100%; }
   .wrapper .content {
     min-height: 90vh;
@@ -5816,8 +5814,6 @@ textarea.form-control-lg {
   height: 100%; }
   .wrapper.active .navigation a i {
     pointer-events: auto; }
-  .wrapper.active .navigation a span {
-    font-size: 0; }
   .wrapper.active .navigation ol {
     display: none; }
 
@@ -5848,6 +5844,13 @@ textarea.form-control-lg {
 
 .wrapper:not(.active) .navigation-bg {
   display: block; }
+
+.wrapper.active .navigation:hover {
+  position: fixed;
+  min-width: 240px;
+  max-width: 240px;
+  overflow: hidden;
+  overflow-y: scroll; }
 
 .navigation-bg {
   background-color: rgba(0, 0, 0, 0.5);
