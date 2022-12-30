@@ -16,10 +16,10 @@
  }
 
  &-thumb {
-  background: darken($primary, 20);
+  background: darken($primary, 10);
 
   &:hover {
-   background: darken($primary, 25);
+   background: darken($primary, 15);
   }
  }
 }

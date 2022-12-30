@@ -6,7 +6,8 @@
 // website basic components and layouts
 @import './layouts/layout', './layouts/navigation', './layouts/header', './layouts/footer', './layouts/topbar', './layouts/sidebar', './layouts/offCanvasModal';
 
-
+// 
+@import './components/width', './components/height';
 
 .hover-up {
  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);

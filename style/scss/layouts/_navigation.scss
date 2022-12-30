@@ -5,7 +5,8 @@
  transition: all .3s;
  height: 100%;
  left: 0;
- z-index: 9;
+ z-index: 1025;
+ overflow: hidden;
 
  li {
 
@@ -27,7 +28,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   transition: all ease-in-out .5s;
+   // transition: all ease-in-out .5s;
    pointer-events: none;
    font-size: 1.25rem;
    min-width: 46px;
@@ -59,11 +60,9 @@
 
 .wrapper.active {
  .navigation {
-  @media only screen and (max-width: 1921px) {
-   min-width: $sidebar-width-collapse;
-   max-width: $sidebar-width-collapse;
-  }
 
+  min-width: $sidebar-width-collapse;
+  max-width: $sidebar-width-collapse;
   text-align: center;
   height: 100%;
 
@@ -73,36 +72,6 @@
 
   ol {
    display: none;
-  }
- }
-}
-
-.wrapper .navigation {
- ol {
-  list-style-type: none;
-  max-height: 140px;
-  overflow: hidden;
-  overflow-y: scroll;
-  padding: 0 10px 0 5px;
-  margin-left: 60px;
-  display: block;
-  border-radius: 4px;
-
-  li {
-   border: none;
-   font-size: $font-size-base - .125rem;
-
-   a {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    color: $white;
-
-    span {
-     font-size: 95%;
-     font-weight: 400;
-    }
-   }
   }
  }
 }
@@ -133,6 +102,6 @@
  left: 0;
  width: 100%;
  height: 100%;
- z-index: 6;
- display: none
+ z-index: 1024;
+ display: none;
 }

@@ -1,0 +1,21 @@
+.dragHandle {
+ position: relative;
+ padding-left: 10px;
+ cursor: pointer;
+
+ &:before {
+  content: '\e945';
+  font-family: 'Material Icons Outlined';
+  position: absolute;
+  left: 5px;
+  display: none;
+ }
+
+ &:hover {
+  padding-left: 20px;
+
+  &:before {
+   display: inline-block;
+  }
+ }
+}

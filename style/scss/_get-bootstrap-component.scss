@@ -10,4 +10,4 @@
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../vendor/bootstrap/scss/utilities/api";
 
-@import "../../vendor/bootstrap/scss/buttons", "../../vendor/bootstrap/scss/tooltip", "../../vendor/bootstrap/scss/forms", "../../vendor/bootstrap/scss/modal";
+@import "../../vendor/bootstrap/scss/buttons", "../../vendor/bootstrap/scss/tooltip", "../../vendor/bootstrap/scss/forms", "../../vendor/bootstrap/scss/modal", "../../vendor/bootstrap/scss/dropdown", "../../vendor/bootstrap/scss/list-group";

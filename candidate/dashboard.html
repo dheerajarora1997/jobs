@@ -11,17 +11,17 @@
 </head>
 
 <body>
- <main class="wrapper active">
+ <main class="wrapper active bg-light">
   <div class="navigation bg-primary text-white d-none d-md-flex">
    <ul class="nav nav-sidebar flex-nowrap flex-column w-100 ps-0 mb-0">
     <li class="text-center w-100 d-block mb-1">
-     <a href="javascript:void(0);" onclick="toggleMenu(this)" class="w-100 d-flex align-items-center text-decoration-none">
+     <a href="javascript:void(0);" onclick="toggleMenu(this)"
+      class="toggle-navigation w-100 d-flex align-items-center text-decoration-none">
       <i class="material-icons-outlined ms-1 me-2 p-2"> menu </i>
      </a>
     </li>
     <li class="text-center w-100 d-block">
-     <a href="javascript:void(0);"
-      class="active w-100 d-flex align-items-center text-decoration-none">
+     <a href="javascript:void(0);" class="active w-100 d-flex align-items-center text-decoration-none">
       <i class="material-icons-outlined ms-1 me-2 p-2">dashboard</i>
       <span class="ms-1">Dashboard</span>
      </a>
@@ -40,7 +40,7 @@
     </li>
     <li class="text-center w-100 d-block">
      <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
-      <i class="material-icons-outlined ms-1 me-2 p-2"s">message</i>
+      <i class="material-icons-outlined ms-1 me-2 p-2" s">message</i>
       <span class="ms-1">Messages</span>
      </a>
     </li>
@@ -52,24 +52,127 @@
     </li>
     <li class="text-center w-100 d-block">
      <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
-      <i class="material-icons-outlined ms-1 me-2 p-2"Logs">format_list_bulleted</i>
+      <i class="material-icons-outlined ms-1 me-2 p-2" Logs">format_list_bulleted</i>
       <span class="ms-1">Activity Logs</span>
      </a>
     </li>
     <li class="text-center w-100 d-block mt-auto">
      <a href="javascript:void(0);" class="w-100 d-flex align-items-center text-decoration-none">
-      <i class="material-icons-outlined ms-1 me-2 p-2"Out" aria-hidden="true">logout</i>
+      <i class="material-icons-outlined ms-1 me-2 p-2" Out" aria-hidden="true">logout</i>
       <span class="ms-1">Sign Out</span>
      </a>
     </li>
    </ul>
   </div>
+  <div class="navigation-bg" onclick="closeNavigation()"></div>
+  <header class="bg-primary bg-opacity-10 border-bottom sticky-top">
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-12 col-sm-4">
+      <div class="my-3">Logo</div>
+     </div>
+     <div class="col-12 col-sm-8 d-flex justify-content-end align-items-center">
+      <div class="dropdown">
+       <button
+        class="border-0 w-10 h-10 text-primary bg-primary bg-opacity-10 p-1 rounded-5 d-flex justify-content-center align-items-center text-decoration-none me-2"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="material-icons-outlined"> notifications </span>
+       </button>
+       <div class="dropdown-menu rounded-0 shadow-sm border-0 min-w-80">
+        <ul class="list-group list-group-flush">
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none text-muted small lh-1">
+           We are pleased to inform you that we have a new job opening that matches your profile.
+          </a>
+         </li>
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none text-muted small lh-1">
+           We are pleased to inform you that we have a new job opening that matches your profile.
+          </a>
+         </li>
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none text-muted small lh-1">
+           We are pleased to inform you that we have a new job opening that matches your profile.
+          </a>
+         </li>
+        </ul>
+       </div>
+
+      </div>
+      <div class="dropdown">
+       <button
+        class="border-0 w-10 h-10 text-white bg-primary bg-opacity-75 p-1 rounded-5 d-flex justify-content-center align-items-center text-decoration-none me-2"
+        data-bs-toggle="dropdown" aria-expanded="false">A</button>
+       <div class="dropdown-menu rounded-0 shadow-sm border-0">
+        <ul class="list-group list-group-flush">
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none">Dashboard</a>
+         </li>
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none">Profile</a>
+         </li>
+         <li class="list-group-item">
+          <a href="javascript:void(0);" class="text-decoration-none">Sign Out</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
   <section>
-   <div class="container">asdasdasd</div>
+   <div class="container-fluid">
+    <div class="row mt-3" id="dragItemBox">
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle">Recent Added Jobs</div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle">Recent Applied</div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle">Follow companies and job
+        trends </div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle"> Access career resources
+       </div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle">Recommended Jobs</div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+     <div class="col-12 col-sm-6">
+      <div class="section-element shadow-sm bg-white mb-2">
+       <div class="element-header border-bottom border-opacity-10 py-2 text-dark dragHandle">Connect with recruiters and
+        employers</div>
+       <div class="element-content p-2 text-muted">content <br><br><br> </div>
+      </div>
+     </div>
+    </div>
+   </div>
   </section>
  </main>
  <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="../vendor/sortable/sortable.min.js"></script>
  <script src="../script/base.js"></script>
+ <script src="../script/pages/dashboard.js"></script>
+ <script>
+ </script>
 </body>
 
 </html>

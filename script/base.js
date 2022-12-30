@@ -1,3 +1,4 @@
+// init Tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
  return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -14,6 +15,13 @@ let toggleMenu = (ele) => {
   wrapper.classList.add('active')
   ele.querySelector('.material-icons-outlined').innerHTML = 'menu';
  }
+}
+
+// Close Navigation
+let closeNavigation = () => {
+ let wrapper = document.querySelector('.wrapper');
+ wrapper.classList.add('active')
+ document.querySelector('.toggle-navigation').querySelector('.material-icons-outlined').innerHTML = 'menu';
 }
 
 
