@@ -3,6 +3,20 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
  return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
+
+// toggle Navigation Menu
+let toggleMenu = (ele) => {
+ let wrapper = document.querySelector('.wrapper');
+ if (wrapper.classList.contains('active')) {
+  wrapper.classList.remove('active')
+  ele.querySelector('.material-icons-outlined').innerHTML = 'arrow_back';
+ } else {
+  wrapper.classList.add('active')
+  ele.querySelector('.material-icons-outlined').innerHTML = 'menu';
+ }
+}
+
+
 // Utility One Popup
 let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { keyboard: false });
 

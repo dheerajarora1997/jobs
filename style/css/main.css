@@ -5754,6 +5754,111 @@ textarea.form-control-lg {
     .modal-fullscreen-xxl-down .modal-body {
       overflow-y: auto; } }
 
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 100%; }
+  .wrapper .content {
+    min-height: 90vh;
+    display: inline-block;
+    width: calc(100% - 76px);
+    max-width: 2500px;
+    transition: all .3s;
+    margin-left: 60px; }
+
+@media only screen and (max-width: 767px) {
+  .wrapper .content {
+    margin-left: 0;
+    width: 100%; }
+    .wrapper .content .page-content {
+      margin-bottom: 140px; } }
+
+.navigation {
+  position: fixed;
+  min-width: 240px;
+  max-width: 240px;
+  transition: all .3s;
+  height: 100%;
+  left: 0;
+  z-index: 9; }
+  .navigation li:first-child {
+    border-bottom: 1px solid;
+    border-color: #fff; }
+    .navigation li:first-child a:hover {
+      background: none; }
+  .navigation a {
+    color: #fff;
+    padding: 5px 0; }
+    .navigation a i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all ease-in-out .5s;
+      pointer-events: none;
+      font-size: 1.25rem;
+      min-width: 46px;
+      min-height: 46px;
+      border-radius: 100%; }
+    .navigation a span {
+      white-space: nowrap;
+      font-size: 1rem; }
+    .navigation a.active i {
+      background: rgba(255, 255, 255, 0.28); }
+    .navigation a.active:hover i {
+      background: none; }
+    .navigation a:hover {
+      background: rgba(255, 255, 255, 0.28); }
+
+.wrapper.active .navigation {
+  min-width: 60px;
+  max-width: 60px;
+  text-align: center;
+  height: 100%; }
+  .wrapper.active .navigation a i {
+    pointer-events: auto; }
+  .wrapper.active .navigation a span {
+    font-size: 0; }
+  .wrapper.active .navigation ol {
+    display: none; }
+
+.wrapper .navigation ol {
+  list-style-type: none;
+  max-height: 140px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 10px 0 5px;
+  margin-left: 60px;
+  display: block;
+  border-radius: 4px; }
+  .wrapper .navigation ol li {
+    border: none;
+    font-size: 0.875rem; }
+    .wrapper .navigation ol li a {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      color: #fff; }
+      .wrapper .navigation ol li a span {
+        font-size: 95%;
+        font-weight: 400; }
+
+.wrapper:not(.active) .navigation > ul {
+  overflow: hidden;
+  overflow-y: scroll; }
+
+.wrapper:not(.active) .navigation-bg {
+  display: block; }
+
+.navigation-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  display: none; }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

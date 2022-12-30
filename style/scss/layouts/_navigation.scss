@@ -1,0 +1,132 @@
+.navigation {
+ position: fixed;
+ min-width: $sidebar-width;
+ max-width: $sidebar-width;
+ transition: all .3s;
+ height: 100%;
+ left: 0;
+ z-index: 9;
+
+ li {
+  // font-size: $font-size-base;
+
+  &:first-child {
+   border-bottom: 1px solid;
+   border-color: #fff;
+
+   a:hover {
+    background: none;
+   }
+  }
+ }
+
+ a {
+  color: $white;
+  padding: 5px 0;
+
+  i {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all ease-in-out .5s;
+   pointer-events: none;
+   font-size: 1.25rem;
+   min-width: 46px;
+   min-height: 46px;
+   border-radius: 100%;
+  }
+
+  span {
+   white-space: nowrap;
+   font-size: 1rem;
+  }
+
+  &.active {
+   i {
+    background: rgba(255, 255, 255, .28);
+   }
+
+   &:hover i {
+    background: none;
+   }
+  }
+
+  &:hover {
+   background: rgba(255, 255, 255, .28);
+  }
+
+ }
+}
+
+.wrapper.active {
+ .navigation {
+  min-width: $sidebar-width-collapse;
+  max-width: $sidebar-width-collapse;
+  text-align: center;
+  height: 100%;
+
+  a i {
+   pointer-events: auto;
+  }
+
+  a span {
+   font-size: 0;
+  }
+
+  ol {
+   display: none;
+  }
+ }
+}
+
+.wrapper .navigation {
+ ol {
+  list-style-type: none;
+  max-height: 140px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 10px 0 5px;
+  margin-left: 60px;
+  display: block;
+  border-radius: 4px;
+
+  li {
+   border: none;
+   font-size: $font-size-base - .125rem;
+
+   a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    color: $white;
+
+    span {
+     font-size: 95%;
+     font-weight: 400;
+    }
+   }
+  }
+ }
+}
+
+.wrapper:not(.active) {
+ .navigation>ul {
+  overflow: hidden;
+  overflow-y: scroll;
+ }
+
+ .navigation-bg {
+  display: block;
+ }
+}
+
+.navigation-bg {
+ background-color: rgba(0, 0, 0, .5);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 6;
+ display: none
+}
