@@ -1,24 +1,25 @@
 @import '../abstracts/variable';
 
 ::selection {
- background: #05264E;
+ background: darken($primary, 20);
  color: #fff;
 }
 
 ::-webkit-scrollbar {
  width: 5px;
+ height: 3px;
 
  &-track {
   background: #f2f2f2;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, .45);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .45);
+  box-shadow: inset 0 0 6px rgba($primary, .45);
+  -webkit-box-shadow: inset 0 0 6px rgba($primary, .45);
  }
 
  &-thumb {
-  background: $primary;
+  background: darken($primary, 20);
 
   &:hover {
-   background: $primary;
+   background: darken($primary, 25);
   }
  }
 }

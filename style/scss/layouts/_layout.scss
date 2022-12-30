@@ -1,18 +1,16 @@
 .wrapper {
  height: 100%;
 
-
  .content {
   min-height: 90vh;
   display: inline-block;
-  width: calc(100% - 76px);
+  width: calc(100%);
   max-width: 2500px;
-  transition: all .3s;
-  margin-left: $sidebar-width-collapse;
+  
  }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
  .wrapper .content {
   margin-left: 0;
   width: 100%;
