@@ -26,7 +26,7 @@ let closeNavigation = () => {
 
 
 // Utility One Popup
-let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { keyboard: false });
+let utilityOnePopup = new bootstrap.Modal('#utilityOnePopup', { backdrop: true, keyboard: false });
 
 // show Utility One Popup
 let showUtilityOnePopup = (title, size, placement) => {
@@ -47,6 +47,7 @@ let showUtilityOnePopup = (title, size, placement) => {
   document.getElementById('utilityOnePopup').classList.remove('offCanvasModal', 'right', 'left')
  }
 }
+
 
 // Hide Utility One Popup
 let hideUtilityOnePopup = () => {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companies List</title>
+  <link rel="stylesheet" href="../style/css/main.css">
+  <link rel="stylesheet" href="../style/css/pages/listing.css">
+</head>
+
+<body>
+  <main class="wrapper active bg-light">
+    <div class="navigation bg-primary text-white d-none d-md-flex"></div>
+    <div class="navigation-bg" onclick="closeNavigation()"></div> 
+    <header class="bg-primary bg-opacity-10 border-bottom sticky-top"></header>
+    <section>
+      <div class="container-fluid mt-3">
+        <div class="d-block bg-white">
+          <div class="banner-hero bg-primary bg-opacity-25 rounded p-2 p-md-4 text-center">
+            <h1 class="h3 fw-normal">Browse Companies</h1>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p class="px-5 text-dark text-opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  repellendus magni, atque delectus molestias quis?</p>
+              </div>
+            </div>
+            <div id="bundleList" class="d-flex justify-content-between px-2 w-100  bg-white rounded flex-wrap">
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">A</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">B</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">C</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">D</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">E</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">F</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">G</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">H</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">I</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">J</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">K</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">L</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">M</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">N</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">O</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">P</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">Q</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">R</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">S</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">T</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">U</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">V</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">W</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">X</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">Y</a>
+              <a href="javascript:void(0);" onclick="activeCurrent(this)"
+                class="text-decoration-none p-2 w-9 hover-bg">Z</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal fade" id="utilityOnePopup" tabindex="-1" aria-labelledby="utilityOneLabel" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="utilityOneLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="../script/base.js"></script>
+  <script src="../script/pages/listing.js"></script>
+</body>
+
+</html>

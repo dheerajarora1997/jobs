@@ -7271,6 +7271,11 @@ header {
 .calc-min-h-250 {
   min-height: calc(100vh - 250px); }
 
+.hover-bg {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1); }
+  .hover-bg:hover {
+    background-color: rgba(34, 124, 112, 0.5); }
+
 .hover-up {
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1); }
   .hover-up:hover {

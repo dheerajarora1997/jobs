@@ -9,11 +9,21 @@
 // 
 @import './components/width', './components/height';
 
-.hover-up {
- transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-
- &:hover {
-  transform: translateY(-3px);
+.hover {
+ &-bg {
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+  &:hover {
+   background-color: rgba($primary, .5);
+  }
+ }
+
+ &-up {
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+  &:hover {
+   transform: translateY(-3px);
+   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
  }
 }
